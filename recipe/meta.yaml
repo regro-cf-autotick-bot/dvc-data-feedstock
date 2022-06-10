@@ -1,5 +1,5 @@
 {% set name = "dvc-data" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17b67b3457e85eaa436313a69ad858dc282b59495bb02add5d5710c3e349caba
+  sha256: ed60aab3ea5467177e6f434d6120b1e4d4d5c94d3f5dde1de4e6471ca9d02e8e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/iterative/dvc-data
-  summary: 'DVC data management library'
+  summary: DVC data management library
   license: Apache-2.0
   license_file: LICENSE
 
