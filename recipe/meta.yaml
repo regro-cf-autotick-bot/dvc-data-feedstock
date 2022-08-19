@@ -28,6 +28,7 @@ requirements:
     - dvc-objects ==0.1.15
     - nanotime >=0.5.2
     - diskcache >=5.2.1
+    - attrs >=21.3.0
 
 test:
   imports:
