@@ -1,5 +1,5 @@
 {% set name = "dvc-data" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 785feb2df9aa6ea42afab02bd9bb1284df0dc2519ee27462af6145ea7203b2f6
+  sha256: 1fc5e058de2c15dbf41a7115812c3bd603b400e8be893395a07271525b05a8f6
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - dictdiffer >=0.8.1
     - pygtrie >=2.3.2
     - shortuuid >=0.5.0
-    - dvc-objects ==0.2.1
+    - dvc-objects ==0.2.2
     - nanotime >=0.5.2
     - diskcache >=5.2.1
     - attrs >=21.3.0
