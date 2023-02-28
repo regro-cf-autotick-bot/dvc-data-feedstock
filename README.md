@@ -1,11 +1,11 @@
-About dvc-data
-==============
+About dvc-data-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dvc-data-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/iterative/dvc-data
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dvc-data-feedstock/blob/main/LICENSE.txt)
 
 Summary: DVC data management library
 
