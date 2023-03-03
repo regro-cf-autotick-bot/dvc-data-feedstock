@@ -29,6 +29,7 @@ requirements:
     - nanotime >=0.5.2
     - diskcache >=5.2.1
     - attrs >=21.3.0
+    - sqltrie >=0.0.28,<1
 
 test:
   imports:
