@@ -1,5 +1,5 @@
 {% set name = "dvc-data" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14ff2d78946ee9caa57b8910eba32f7abec746b4f8d8791548759b16d4607682
+  sha256: 475f6f4824049a67a4ab31a3be688fb40d9f40e7fb84373535649fb35e6d17e6
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - nanotime >=0.5.2
     - diskcache >=5.2.1
     - attrs >=21.3.0
-    - sqltrie >=0.9.0,<1
+    - sqltrie >=0.11.0,<1
 
 test:
   imports:
