@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -20,16 +20,16 @@ requirements:
     - pip
     - setuptools_scm >=6.3.1
   run:
-    - fsspec >=2024.2.0
-    - tqdm >=4.63.1,<5
     - python >=3.9
-    - funcy >=1.14
-    - dictdiffer >=0.8.1
-    - pygtrie >=2.3.2
-    - dvc-objects >=4.0.1,<6
-    - diskcache >=5.2.1
     - attrs >=21.3.0
+    - dictdiffer >=0.8.1
+    - diskcache >=5.2.1
+    - dvc-objects >=4.0.1,<6
+    - fsspec >=2024.2.0
+    - funcy >=1.14
+    - pygtrie >=2.3.2
     - sqltrie >=0.11.0,<1
+    - tqdm >=4.63.1,<5
 
 test:
   imports:
